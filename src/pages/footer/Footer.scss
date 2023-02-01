@@ -1,0 +1,128 @@
+.footer {
+  background-color: #222;
+  padding: 100px 0;
+  h3 {
+    color: white;
+    font-size: 25px;
+    margin: -56px 0 9px;
+  }
+  ul {
+    list-style: none;
+    color: white;
+    li {
+      font-size: 15px;
+      color: #00bcd4;
+    }
+  }
+  .related_links {
+    line-height: 12px;
+    li {
+      color: #fff;
+      opacity: 0.8;
+      margin: 0 0 17px;
+      text-align: left;
+      font-size: 14px;
+    }
+  }
+  .footer_list {
+    padding: 0;
+  }
+  .payment {
+    display: flex;
+    padding: 0;
+    li {
+      padding: 0 12px;
+      width: 28%;
+    }
+    img {
+      max-width: 100%;
+    }
+  }
+  .container {
+    width: 100%;
+    .payment_section{
+      p{
+        color: #999;
+      }
+    }
+    .footer_minutes_details {
+      p {
+        padding: 0;
+        color: white;
+      }
+      .footer_icon {
+        color: #00bcd4;
+        font-size: 20px;
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        width: 14rem;
+        padding: 0;
+      }
+    }
+  }
+}
+
+@media (max-width:768px){
+    .footer {
+        background-color: #222;
+        padding:100px 0;
+        h3 {
+          color: white;
+          font-size: 25px;
+          margin:0 0 9px;
+        }
+        ul {
+          list-style: none;
+          color: white;
+          li {
+            font-size: 15px;
+            color: #00bcd4;
+          }
+        }
+        .related_links {
+          line-height: 12px;
+          li {
+            color: #fff;
+            opacity: 0.8;
+            margin: 0 0 17px;
+            text-align: left;
+            font-size: 14px;
+          }
+        }
+        .footer_list {
+          padding: 0;
+        }
+        .payment {
+          display: flex;
+          padding: 0;
+          li {
+            padding: 0 12px;
+            width: 28%;
+          }
+          img {
+            max-width: 100%;
+          }
+        }
+        .container {
+          width: 100%;
+          .footer_minutes_details {
+            p {
+              padding: 0;
+              color: white;
+            }
+            .footer_icon {
+              color: #00bcd4;
+              font-size: 20px;
+              display: flex;
+              list-style: none;
+              justify-content: space-between;
+              width: 14rem;
+              padding: 0;
+            }
+          }
+        }
+      }
+      
+
+}

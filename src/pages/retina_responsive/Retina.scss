@@ -1,0 +1,53 @@
+.container-fluid {
+  .details {
+    background: #00bcd4;
+  }
+  .retina_row {
+    padding-bottom: 4rem;
+  }
+
+  .img {
+    background: url("../../media/group.jpg") no-repeat right;
+    background-size: cover;
+  }
+  .retinaDetails {
+    margin-left: 21px;
+    padding: 120px 60px 100px;
+    color: #ffff;
+    line-height: 30px;
+    h3 {
+      font-size: 45px;
+    }
+    ul {
+      list-style: none;
+      li {
+        margin-left: -28px;
+        span {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media  (max-width: 767px) {
+  .container-fluid {
+    width: 100%;
+  }
+  .img {
+    padding: 23vh;
+    width: 100%;
+    position: relative;
+  }
+  .details {
+    padding: 60px 15px 40px;
+    margin: 0 auto;
+  }
+  .retinaDetails {
+    padding: 0;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  
+}

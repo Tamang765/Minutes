@@ -1,0 +1,33 @@
+.client-container {
+  justify-content: center;
+  display: flex;
+  .col-md-2 {
+    width: 20%;
+    button {
+      border: none;
+      opacity: 0.2;
+      img {
+        max-width: 120px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .client-container {
+    width: 90%;
+    .text-center {
+      display: flex;
+      .col-md-2 {
+        width: 50%;
+        button {
+          border: none;
+          opacity: 0.2;
+          img {
+            max-width: 120px;
+          }
+        }
+      }
+    }
+  }
+}

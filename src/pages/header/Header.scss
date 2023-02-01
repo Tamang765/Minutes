@@ -1,0 +1,110 @@
+.header {
+  position: relative;
+  background: #333 url(../../media/bg_header_img.jpg) no-repeat center bottom;
+
+  .overlay {
+    top: 0;
+    left: 0;
+    background-color: rgba(51, 51, 51, 0.208);
+    height: 100%;
+    width: 100%;
+  }
+  .pageInfo {
+    position: absolute;
+    z-index: 1;
+    top: 9rem;
+    left: 10rem;
+    color: white;
+    .available_app {
+      border: none;
+      background-color: #00bcd4;
+      font-weight: 700;
+      font-size: 14px;
+      color: #fff;
+      width: 13rem;
+      display: flex;
+      padding: 10px;
+      align-items: center;
+      .icon_phone {
+        font-size: 12px;
+        .mobile_icon {
+          font-size: 45px !important;
+        }
+      }
+      .text {
+    
+      }
+      .icon_details {
+        display: block;
+        span {
+          font-size: 12px;
+          padding: 4px;
+        }
+        h4 {
+          font-weight: 700;
+        }
+      }
+    }
+    h2 {
+      color: #fff;
+      font-size: 55px;
+      margin: 40px 0px 25px;
+      font-weight: normal;
+      letter-spacing: -1px;
+      text-align: left;
+      line-height: 63px;
+      span {
+        color: #00bcd4;
+      }
+    }
+    p {
+      padding-right: 41%;
+      color: #fff;
+      opacity: 0.8;
+      margin: 0 0 17px;
+      text-align: left;
+      font-size: 14px;
+    }
+  }
+
+  .bg-img {
+    padding: 20rem;
+    position: relative;
+    background-size: cover;
+    margin-bottom: 6em;
+
+    .overlapImg {
+      position: absolute;
+      width: 21rem;
+      left: 66%;
+      top: 30%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    width: 100%;
+    display: block;
+    padding-top: 50px;
+    padding-bottom: 200px;
+    margin-top: -50px;
+
+    .pageInfo {
+      position: absolute;
+      z-index: 1;
+      top: 9rem;
+      left: 1rem;
+      color: white;
+    }
+    .bg-img {
+      padding: 56rem 0 0 0;
+      .overlapImg {
+        position: absolute;
+        width: 20rem;
+        left: 11%;
+        top: 76%;
+      }
+    }
+  }
+}

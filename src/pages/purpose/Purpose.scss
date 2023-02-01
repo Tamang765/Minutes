@@ -1,0 +1,56 @@
+.container {
+  .row {
+    display: flex;
+
+  }
+  #purpose_details {
+    width: 50%;
+    h3 {
+      margin: 2.5rem 0;
+      font-size: 45px;
+      line-height: 50px;
+    }
+    p {
+      font-size: 14px;
+      line-height: 25px;
+      letter-spacing: 0.3px;
+      color: #888;
+    }
+    .Learn_more {
+      border: none;
+      background-color: #00bcd4;
+      padding: 0px 40px;
+      line-height: 50px;
+      font-size: 13px;
+      font-weight: 700;
+      color: #ffff;
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+@media  (min-width: 900px) and (max-width: 767px) {
+  .container {
+    .row {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      #purpose_details {
+        width: 100%;
+
+        h3 {
+          margin: 20px 0px 20px;
+          font-size: 38px;
+          line-height: 44px;
+        }
+      
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.row{
+  padding-bottom: 4rem;
+}
+a {
+    text-decoration: none;
+    opacity: 0.2;
+    color: #fff;
+  }
+
+  .slick-next{
+    display:none;
+  }
+
+@media (max-width: 768px){
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    .navbar-scroll{
+        width: 100%;
+
+        .navbar-toggler{
+            margin-right: 10px;
+        }
+
+    }
+  .row{
+    padding: 0;
+  }
+
+
+}

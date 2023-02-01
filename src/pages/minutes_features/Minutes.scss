@@ -1,0 +1,108 @@
+.feature_minutes {
+padding: 0;
+  background-color: #222;
+  #Minutes {
+    margin-top: 5%;
+    .row-2 {
+      .col-sm-4 {
+        .minutes_item {
+       
+          h4 {
+            padding: 30px 0px 12px;
+            font-size: 15px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #fff;
+          }
+          p {
+            color: #fff;
+          }
+          .Learn_more {
+            border: none;
+            background-color: #00bcd4;
+            padding: 0 22px;
+            line-height: 33px;
+            font-size: 12px;
+            font-weight: 500;
+            color: white;
+            a {
+              text-decoration: none;
+              color: #ffff;
+            }
+          }
+        }
+      }
+    }
+    
+  }
+  .minutes_details {
+    display: block;
+    text-align: center;
+    h2 {
+      color: #fff;
+      margin: 60px 0 10px 0;
+    }
+    p {
+      color: #fff;
+      opacity: 0.2;
+      text-align: center;
+      padding: 0 25%;
+    }
+  }
+  
+}
+@media only screen and (min-width: 250px) and (max-width: 768px) {
+    .feature_minutes {
+        background-color: #222;
+        width:100%;
+        #Minutes {
+          margin-top: 5%;
+          .row {
+            margin-top: 3rem;
+          }
+        }
+        .minutes_details {
+          display: block;
+          justify-content: center;
+          text-align: center;
+          h2 {
+            color: #fff;
+            margin: 60px 0 10px 0;
+          }
+          p {
+            color: #fff;
+            opacity: 0.2;
+            text-align: center;
+            padding: 0;
+          }
+        }
+        .minutes_item {
+          h4 {
+            padding: 30px 0px 12px;
+            font-size: 15px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #fff;
+          }
+          p {
+            color: #fff;
+          }
+          .Learn_more {
+            border: none;
+            background-color: #00bcd4;
+            padding: 0 22px;
+            line-height: 33px;
+            font-size: 12px;
+            font-weight: 500;
+            color: white;
+            margin-bottom: 15px;
+            a {
+              text-decoration: none;
+              color: #ffff;
+            }
+
+          }
+        }
+      }
+      
+}
