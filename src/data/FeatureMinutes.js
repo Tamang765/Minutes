@@ -1,3 +1,4 @@
+import brand from '../media/brand.jpg'
 
 
 
