@@ -7,6 +7,7 @@ import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import photo from "../../media/phtot.jpg";
+import carouselData from "./CaoruselData";
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -24,7 +25,7 @@ export default class Testimonial extends Component {
     var settings = {
       dots: true,
       nextArrow:<SampleNextArrow/>,
-      infinite: false,
+      infinite: true,
       speed: 1000,
       slidesToShow: 3,
       slidesToScroll: 3,
@@ -69,7 +70,43 @@ export default class Testimonial extends Component {
           </Col>
         </Row>
         <Slider {...settings} className="testimonia_slider">
-          <div>
+       { carouselData.map((val,index)=>{    
+        return(
+        <div key={val.id}>
+            <Card className="card_slider">
+              <Card.Body>
+                <Card.Text className="details">
+                  {val.details}
+                </Card.Text>
+              </Card.Body>
+              <div className="author">
+                <Card.Img variant="top" src={photo} />
+                <div className="author_info">
+                  <Card.Text className="author_name">{val.author}</Card.Text>
+                  <Card.Text className="company_name">{val.company}</Card.Text>
+                </div>
+              </div>
+            </Card>
+          </div>);
+          })}
+          {/* <div>
+            <Card className="card_slider">
+              <Card.Body>
+                <Card.Text className="details">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </Card.Text>
+              </Card.Body>
+              <div className="author">
+                <Card.Img variant="top" src={photo} />
+                <div className="author_info">
+                  <Card.Text className="author_name">Joseph Doe</Card.Text>
+                  <Card.Text className="company_name">@company</Card.Text>
+                </div>
+              </div>
+            </Card>
+          </div> */}
+          {/* <div>
             <Card className="card_slider">
               <Card.Body>
                 <Card.Text className="details">
@@ -204,41 +241,7 @@ export default class Testimonial extends Component {
                 </div>
               </div>
             </Card>
-          </div>
-          <div>
-            <Card className="card_slider">
-              <Card.Body>
-                <Card.Text className="details">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </Card.Text>
-              </Card.Body>
-              <div className="author">
-                <Card.Img variant="top" src={photo} />
-                <div className="author_info">
-                  <Card.Text className="author_name">Joseph Doe</Card.Text>
-                  <Card.Text className="company_name">@company</Card.Text>
-                </div>
-              </div>
-            </Card>
-          </div>
-          <div>
-            <Card className="card_slider">
-              <Card.Body>
-                <Card.Text className="details">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </Card.Text>
-              </Card.Body>
-              <div className="author">
-                <Card.Img variant="top" src={photo} />
-                <div className="author_info">
-                  <Card.Text className="author_name">Joseph Doe</Card.Text>
-                  <Card.Text className="company_name">@company</Card.Text>
-                </div>
-              </div>
-            </Card>
-          </div>
+          </div> */}
           <div></div>
           <div></div>
         </Slider>
